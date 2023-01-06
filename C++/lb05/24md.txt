@@ -1,0 +1,337 @@
+    Table 3. Land Area, Population, and Density for Places in Maryland:  1990
+
+    Source:  US Census Bureau
+    Release date:  May 1996
+
+    FIPS CODES                                 POP PER  POP PER
+    ST   PLACE       POP     SQ.KI.   SQ.MI.   SQ.KI.   SQ.MI.  NAME
+
+    24   00125       13,087     13.7      5.3    955.8   2475.6 Aberdeen town
+    24   00175        5,267     28.2     10.9    186.8    483.8 Aberdeen Proving Ground CDP
+    24   00225          349      1.3      0.5    271.6    703.4 Accident town
+    24   00250        4,477     58.0     22.4     77.2    199.8 Accokeek CDP
+    24   00400       13,524      7.8      3.0   1742.8   4513.8 Adelphi CDP
+    24   01450       10,228     17.6      6.8    581.8   1506.8 Andrews AFB CDP
+    24   01600       33,187     16.4      6.3   2025.5   5245.9 Annapolis city
+    24   01975       19,750     16.8      6.5   1174.1   3041.0 Arbutus CDP
+    24   02025        2,427      4.2      1.6    577.0   1494.5 Arden-on-the-Severn CDP
+    24   02275       20,261     28.0     10.8    724.2   1875.8 Arnold CDP
+    24   02762        3,092     19.6      7.6    158.0    409.1 Ashton-Sandy Springs CDP
+    24   02825       45,494     27.1     10.5   1678.6   4347.5 Aspen Hill CDP
+    24   03800        5,546     14.5      5.6    383.0    991.9 Ballenger Creek CDP
+    24   04000      736,014    209.3     80.8   3516.6   9108.0 Baltimore city
+    24   04250          170      0.7      0.3    253.7    657.2 Barclay town
+    24   04475          170      1.3      0.5    134.9    349.4 Barnesville town
+    24   04625          530      0.6      0.2    870.3   2254.0 Barton town
+    24   05550        8,860      6.7      2.6   1329.1   3442.5 Bel Air town
+    24   05825       14,880     42.6     16.4    349.7    905.6 Bel Air North CDP
+    24   05950       26,421     41.0     15.8    644.7   1669.9 Bel Air South CDP
+    24   06400       14,476     17.0      6.6    852.0   2206.6 Beltsville CDP
+    24   06800        2,616      5.2      2.0    502.5   1301.5 Berlin town
+    24   06925        2,952      1.7      0.6   1764.5   4570.0 Berwyn Heights town
+    24   07125       62,936     38.4     14.8   1639.0   4245.1 Bethesda CDP
+    24   07200          360      2.2      0.9    162.5    420.8 Betterton town
+    24   07850        8,064      2.6      1.0   3158.6   8180.9 Bladensburg town
+    24   08625        2,445      2.8      1.1    870.4   2254.4 Boonsboro town
+    24   08775       37,589     33.3     12.9   1128.6   2923.1 Bowie city
+    24   08800        5,595      8.3      3.2    670.4   1736.3 Bowleys Quarters CDP
+    24   09100        4,778     19.7      7.6    242.6    628.2 Braddock Heights CDP
+    24   09325        1,406     11.1      4.3    126.8    328.4 Brandywine CDP
+    24   09500        3,005      1.0      0.4   3066.3   7941.8 Brentwood town
+    24   09675        2,702      7.2      2.8    376.9    976.2 Bridgeport CDP
+    24   10225           54      0.5      0.2    106.9    277.0 Brookeville town
+    24   10475       10,987      7.6      2.9   1446.4   3746.2 Brooklyn Park CDP
+    24   10575           64      0.1      0.0    609.5   1578.7 Brookview town
+    24   10900        5,117      5.4      2.1    955.2   2474.0 Brunswick town
+    24   10925        3,809     15.0      5.8    254.1    658.1 Bryans Road CDP
+    24   11400          194      1.1      0.4    182.2    471.8 Burkittsville town
+    24   11750        5,853     20.2      7.8    289.1    748.9 Burtonsville CDP
+    24   12087        5,341      6.8      2.6    790.2   2046.6 Cabin John-Brookmont CDP
+    24   12150        7,626     33.4     12.9    228.1    590.9 California CDP
+    24   12305        1,728      7.1      2.7    242.7    628.5 Calvert Beach-Long Beach CDP
+    24   12350       12,046     12.4      4.8    971.7   2516.7 Calverton CDP
+    24   12400       11,514     17.1      6.6    673.1   1743.3 Cambridge city
+    24   12600       16,392     18.6      7.2    882.8   2286.5 Camp Springs CDP
+    24   12912        7,878      5.2      2.0   1520.0   3936.7 Cape St. Claire CDP
+    24   13000        3,633      1.9      0.7   1882.4   4875.4 Capitol Heights town
+    24   13312        4,815      1.9      0.7   2510.4   6502.0 Carmody Hills-Pepper Mill Village CDP
+    24   13325       25,578     18.1      7.0   1412.4   3658.2 Carney CDP
+    24   14125       35,233     36.3     14.0    970.9   2514.7 Catonsville CDP
+    24   14325          489      1.2      0.4    420.1   1088.1 Cecilton town
+    24   14950        2,097      4.1      1.6    512.8   1328.3 Centreville town
+    24   15400          578      2.1      0.8    275.2    712.9 Charlestown town
+    24   15475        1,992     20.9      8.1     95.5    247.4 Charlotte Hall CDP
+    24   15925        2,403      4.9      1.9    493.4   1278.0 Chesapeake Beach town
+    24   15950          735      1.2      0.5    606.4   1570.7 Chesapeake City town
+    24   16050        5,423     20.5      7.9    264.7    685.6 Chesapeake Ranch Estates CDP
+    24   16225        4,005      6.6      2.5    607.7   1574.0 Chestertown town
+    24   16550        6,023      3.3      1.3   1820.7   4715.7 Cheverly town
+    24   16620        2,675      1.2      0.5   2208.9   5721.1 Chevy Chase town
+    24   16625        8,559      6.6      2.6   1288.4   3337.0 Chevy Chase CDP
+    24   16720          632      0.3      0.1   2332.1   6040.1 Chevy Chase Section Five village
+    24   16730        2,078      1.1      0.4   1938.4   5020.5 Chevy Chase Section Three village
+    24   16787          749      0.3      0.1   2539.0   6576.0 Chevy Chase Village town
+    24   16875       31,309     10.6      4.1   2945.6   7629.2 Chillum CDP
+    24   17050          113      0.8      0.3    139.2    360.4 Church Creek town
+    24   17100          481      1.1      0.4    439.3   1137.7 Church Hill town
+    24   17600          415      0.3      0.1   1492.8   3866.4 Clear Spring town
+    24   17900       19,987     27.8     10.7    718.0   1859.7 Clinton CDP
+    24   18100        2,823      3.5      1.3    812.6   2104.7 Clover Hill CDP
+    24   18150        7,904     10.1      3.9    779.6   2019.1 Cloverly CDP
+    24   18250       18,668     29.1     11.2    641.6   1661.8 Cockeysville CDP
+    24   18475       18,819     23.9      9.2    786.8   2037.8 Colesville CDP
+    24   18750       21,927     14.0      5.4   1570.3   4067.0 College Park city
+    24   18850        1,249      1.2      0.4   1076.7   2788.7 Colmar Manor town
+    24   19125       75,883     60.1     23.2   1262.5   3269.8 Columbia CDP
+    24   19825       11,032      3.9      1.5   2800.0   7252.0 Coral Hills CDP
+    24   20050        1,236      0.6      0.2   1940.3   5025.5 Cottage City town
+    24   20530        4,586     19.3      7.4    237.8    615.8 Cresaptown-Bel Air CDP
+    24   20775        2,880      4.2      1.6    683.9   1771.4 Crisfield city
+    24   20875       12,781     13.0      5.0    982.3   2544.2 Crofton CDP
+    24   21075        1,514     14.4      5.6    105.2    272.5 Crownsville CDP
+    24   21325       23,706     21.4      8.3   1105.4   2862.9 Cumberland city
+    24   21475        9,817     24.7      9.5    397.2   1028.6 Damascus CDP
+    24   22050        4,151     11.2      4.3    369.3    956.5 Deale CDP
+    24   22275          419      2.6      1.0    162.0    419.6 Deer Park town
+    24   22600        1,430      1.0      0.4   1437.2   3722.3 Delmar town
+    24   22725        2,977      6.0      2.3    492.6   1275.7 Denton town
+    24   23005        2,443      2.5      1.0    989.1   2561.7 Discovery-Spring Garden CDP
+    24   23025        6,704      2.1      0.8   3221.5   8343.8 District Heights city
+    24   23075        4,842      2.2      0.8   2236.5   5792.5 Dodge Park CDP
+    24   23975       65,800     34.5     13.3   1905.3   4934.6 Dundalk CDP
+    24   24200           38      0.3      0.1    126.7    328.1 Eagle Harbor town
+    24   24450          153      0.6      0.2    237.9    616.3 East New Market town
+    24   24475        9,372     20.5      7.9    458.2   1186.7 Easton town
+    24   24650       14,187      4.4      1.7   3245.7   8406.4 East Riverdale CDP
+    24   24950        9,226     27.9     10.8    330.5    856.0 Edgemere CDP
+    24   25150       23,903     46.6     18.0    512.9   1328.4 Edgewood CDP
+    24   25425          851      0.9      0.4    898.6   2327.4 Edmonston town
+    24   25575        9,720     21.7      8.4    447.5   1158.9 Eldersburg CDP
+    24   25600           49      0.2      0.1    240.2    622.1 Eldorado town
+    24   25750       12,953     20.5      7.9    633.2   1640.0 Elkridge CDP
+    24   25800        9,073     20.9      8.1    434.5   1125.3 Elkton town
+    24   26000       41,396     83.1     32.1    498.1   1290.2 Ellicott City CDP
+    24   26200        1,688      3.1      1.2    549.3   1422.7 Emmitsburg town
+    24   26600       40,872     24.6      9.5   1660.5   4300.7 Essex CDP
+    24   27250       19,828     12.9      5.0   1533.8   3972.7 Fairland CDP
+    24   27400        1,238      0.7      0.3   1778.7   4606.9 Fairmount Heights town
+    24   27700        5,730     22.6      8.7    253.4    656.4 Fallston CDP
+    24   27900        2,365      5.1      2.0    467.8   1211.5 Federalsburg town
+    24   28075       16,355     10.5      4.0   1562.8   4047.7 Ferndale CDP
+    24   28725        2,859      1.2      0.5   2303.8   5966.8 Forest Heights town
+    24   29000       16,731     11.7      4.5   1424.4   3689.2 Forestville CDP
+    24   29400       12,509     17.0      6.6    734.0   1901.1 Fort Meade CDP
+    24   29450        1,249      2.5      1.0    498.6   1291.4 Fort Ritchie CDP
+    24   29525       24,032     35.2     13.6    683.5   1770.2 Fort Washington CDP
+    24   30325       40,148     47.1     18.2    852.2   2207.1 Frederick city
+    24   30575        9,028     17.6      6.8    513.1   1328.9 Friendly CDP
+    24   30850          577      2.4      0.9    239.8    621.1 Friendsville town
+    24   30900        8,075      7.1      2.8   1133.7   2936.2 Frostburg city
+    24   30950        3,511      8.9      3.5    392.7   1017.1 Fruitland city
+    24   31100        1,136      0.7      0.3   1615.9   4185.3 Funkstown town
+    24   31175       39,542     23.6      9.1   1673.0   4333.0 Gaithersburg city
+    24   31225          324      0.9      0.3    359.6    931.4 Galena town
+    24   31250          123      0.5      0.2    224.0    580.3 Galestown town
+    24   31525          884      0.7      0.3   1273.8   3299.1 Garrett Park town
+    24   31625        5,045      8.1      3.1    626.4   1622.4 Garrison CDP
+    24   32025       41,145     27.8     10.7   1481.8   3838.0 Germantown CDP
+    24   32500        5,025      2.0      0.8   2490.1   6449.3 Glenarden town
+    24   32650       37,305     31.8     12.3   1171.5   3034.3 Glen Burnie CDP
+    24   32900          234      0.3      0.1    826.9   2141.6 Glen Echo town
+    24   33400        9,689     21.2      8.2    457.7   1185.5 Glenn Dale CDP
+    24   33812        4,576      6.2      2.4    741.5   1920.6 Goddard CDP
+    24   33850        2,944      6.7      2.6    438.2   1135.0 Golden Beach CDP
+    24   33950          185      0.5      0.2    402.2   1041.6 Goldsboro town
+    24   34525          505      0.7      0.3    706.3   1829.3 Grantsville town
+    24   34550        2,439     15.8      6.1    153.9    398.7 Grasonville CDP
+    24   34712       11,528     96.3     37.2    119.7    309.9 Greater Upper Marlboro CDP
+    24   34775       21,096     15.4      5.9   1370.8   3550.3 Greenbelt city
+    24   34975       14,416      8.3      3.2   1743.2   4514.8 Green Haven CDP
+    24   35200        1,441      1.8      0.7    823.0   2131.5 Greensboro town
+    24   35412        9,424     53.3     20.6    176.8    457.9 Green Valley CDP
+    24   36075       35,445     25.7      9.9   1380.0   3574.3 Hagerstown city
+    24   36125        8,873     11.7      4.5    758.1   1963.4 Halfway CDP
+    24   36500        2,608      5.9      2.3    439.5   1138.3 Hampstead town
+    24   36512        4,926     14.8      5.7    333.0    862.5 Hampton CDP
+    24   36600        1,926      7.0      2.7    276.4    716.0 Hancock town
+    24   37600        8,952      8.6      3.3   1045.2   2707.0 Havre de Grace city
+    24   37875          665      1.0      0.4    678.6   1757.5 Hebron town
+    24   37925           66      0.3      0.1    205.0    530.9 Henderson town
+    24   38025        1,707      4.0      1.5    431.9   1118.7 Herald Harbor CDP
+    24   38500          102      0.2      0.1    520.4   1347.9 Highland Beach town
+    24   38850       10,318      5.3      2.0   1949.7   5049.8 Hillandale CDP
+    24   38975       17,136      6.3      2.4   2719.6   7043.7 Hillcrest Heights CDP
+    24   39175          164      0.4      0.1    443.2   1148.0 Hillsboro town
+    24   39300        3,321      3.5      1.3    950.5   2461.8 Hillsmere Shores CDP
+    24   40700        1,319     27.9     10.8     47.3    122.5 Hughesville CDP
+    24   41125        1,706      5.3      2.1    320.6    830.2 Hurlock town
+    24   41250       13,864      5.5      2.1   2500.7   6476.9 Hyattsville city
+    24   41500        3,531      2.8      1.1   1283.5   3324.4 Indian Head town
+    24   42325        2,148     17.9      6.9    120.3    311.6 Jarrettsville CDP
+    24   42550        6,537     10.9      4.2    598.2   1549.4 Jessup CDP
+    24   42875       11,084     17.6      6.8    628.2   1627.1 Joppatowne CDP
+    24   43100          464      1.7      0.7    275.0    712.4 Keedysville town
+    24   43500        1,713      1.3      0.5   1347.8   3490.7 Kensington town
+    24   43625        7,967      4.3      1.7   1861.0   4820.0 Kentland CDP
+    24   43900        9,901     14.1      5.5    700.2   1813.4 Kettering CDP
+    24   44325        1,660      5.1      2.0    324.5    840.5 Kingstown CDP
+    24   44350        3,550     26.2     10.1    135.6    351.2 Kingsville CDP
+    24   44475          275      0.7      0.3    411.7   1066.2 Kitzmiller town
+    24   44975       13,269     26.4     10.2    502.6   1301.8 Lake Shore CDP
+    24   45325        5,052      2.1      0.8   2423.0   6275.6 Landover CDP
+    24   45400        2,074      0.7      0.3   3018.9   7819.0 Landover Hills town
+    24   45525       17,474      2.5      1.0   6931.4  17952.3 Langley Park CDP
+    24   45612       16,792     13.6      5.2   1239.0   3209.0 Lanham-Seabrook CDP
+    24   45662       15,509     10.6      4.1   1460.9   3783.8 Lansdowne-Baltimore Highlands CDP
+    24   45750        5,841     12.6      4.9    464.7   1203.5 La Plata town
+    24   45825        9,475      7.9      3.0   1200.3   3108.7 Largo CDP
+    24   45900       19,438      8.2      3.2   2369.6   6137.3 Laurel city
+    24   46075        4,694     21.0      8.1    223.0    577.7 La Vale CDP
+    24   46100        1,326     16.5      6.4     80.4    208.1 Lawsonia CDP
+    24   46250          248      2.5      1.0     97.6    252.8 Laytonsville town
+    24   46475        1,475      6.9      2.7    214.7    556.0 Leonardtown town
+    24   46725        9,943     20.8      8.0    478.1   1238.2 Lexington Park CDP
+    24   47043        4,079     40.1     15.5    101.6    263.2 Linganore-Bartonsville CDP
+    24   47125        7,547     10.9      4.2    692.8   1794.3 Linthicum CDP
+    24   47450       25,240     14.4      5.6   1749.5   4531.2 Lochearn CDP
+    24   47525          461      0.8      0.3    583.5   1511.4 Loch Lynn Heights town
+    24   47875        1,122      1.0      0.4   1124.2   2911.8 Lonaconing town
+    24   47925        6,992      7.8      3.0    894.1   2315.8 Londontowne CDP
+    24   48180        5,594     16.4      6.3    340.5    881.9 Long Meadow CDP
+    24   48775          184      0.7      0.3    256.6    664.7 Luke town
+    24   48900       16,442     19.3      7.4    854.0   2211.9 Lutherville-Timonium CDP
+    24   49950        2,810      5.0      1.9    565.2   1463.8 Manchester town
+    24   50500        1,244     10.8      4.2    115.4    298.9 Marbury CDP
+    24   50525          360      0.9      0.4    384.2    995.1 Mardela Springs town
+    24   50750        5,885      5.4      2.1   1099.8   2848.5 Marlow Heights CDP
+    24   50775        5,523     15.5      6.0    356.0    922.0 Marlton CDP
+    24   50965          846      0.3      0.1   2473.7   6406.8 Martin's Additions village
+    24   51025          143      0.2      0.1    877.3   2272.2 Marydel town
+    24   51075        6,813      6.8      2.6   1001.5   2593.8 Maryland City CDP
+    24   51575        2,537      6.6      2.5    386.5   1001.0 Mayo CDP
+    24   51587       10,132      9.7      3.8   1042.3   2699.5 Mays Chapel CDP
+    24   52300       24,616     20.1      7.8   1225.0   3172.7 Middle River CDP
+    24   52425        1,834      2.6      1.0    702.1   1818.6 Middletown town
+    24   52475          574      0.5      0.2   1176.2   3046.4 Midland town
+    24   52562       22,547     18.1      7.0   1248.0   3232.2 Milford Mill CDP
+    24   52825          409      0.8      0.3    491.6   1273.2 Millington town
+    24   52975       12,593     27.9     10.8    451.8   1170.2 Mitchellville CDP
+    24   53325       32,315     16.8      6.5   1927.2   4991.4 Montgomery Village CDP
+    24   53625          930      0.9      0.3   1083.9   2807.3 Morningside town
+    24   53750        3,608     10.9      4.2    331.7    859.2 Mount Aetna CDP
+    24   53800        1,938      3.8      1.5    515.4   1335.0 Mountain Lake Park town
+    24   53875        3,730      7.4      2.8    507.3   1314.0 Mount Airy town
+    24   54275        7,954      1.7      0.7   4703.7  12182.6 Mount Rainier city
+    24   54875          464      1.6      0.6    286.2    741.4 Myersville town
+    24   55050        5,420      1.4      0.6   3779.6   9789.3 Naval Academy CDP
+    24   55400       12,002      3.9      1.5   3051.6   7903.7 New Carrollton city
+    24   55650          328      1.6      0.6    210.4    544.9 New Market town
+    24   55925          757      1.4      0.5    542.7   1405.5 New Windsor town
+    24   56300        1,173      0.7      0.3   1572.4   4072.5 North Beach town
+    24   56337       29,656     19.3      7.4   1538.5   3984.7 North Bethesda CDP
+    24   56375          512      0.3      0.1   1976.8   5120.0 North Brentwood town
+    24   56450        1,913      2.4      0.9    793.1   2054.2 North East town
+    24   56712        8,607      4.0      1.5   2158.2   5589.8 North Kensington CDP
+    24   56725       15,008     26.5     10.2    566.0   1466.0 North Laurel CDP
+    24   56875       18,456     15.6      6.0   1181.6   3060.4 North Potomac CDP
+    24   57650        1,741      4.5      1.7    387.6   1003.8 Oakland town
+    24   57625        2,078      8.6      3.3    242.1    627.1 Oakland CDP
+    24   58225        5,146     11.9      4.6    433.2   1121.9 Ocean City town
+    24   58275        4,251     17.0      6.6    250.0    647.4 Ocean Pines CDP
+    24   58300       12,833     34.7     13.4    369.8    957.8 Odenton CDP
+    24   58900       23,019     23.5      9.1    978.1   2533.2 Olney CDP
+    24   59325       12,137      8.0      3.1   1519.2   3934.8 Overlea CDP
+    24   59425        9,474     24.9      9.6    380.7    986.1 Owings Mills CDP
+    24   59450          699      1.1      0.4    653.9   1693.6 Oxford town
+    24   59505       35,794     22.8      8.8   1570.3   4067.1 Oxon Hill-Glassmanor CDP
+    24   59650        7,019      1.9      0.7   3719.7   9633.9 Palmer Park CDP
+    24   60275       31,617     11.0      4.2   2882.9   7466.8 Parkville CDP
+    24   60325       10,054     26.7     10.3    376.3    974.5 Parole CDP
+    24   60475       10,012     19.2      7.4    521.7   1351.3 Pasadena CDP
+    24   60975       22,723     18.1      7.0   1254.5   3249.2 Perry Hall CDP
+    24   61075        2,160     11.6      4.5    186.0    481.6 Perryman CDP
+    24   61150        2,456      5.7      2.2    433.0   1121.5 Perryville town
+    24   61400       24,815     31.0     12.0    800.1   2072.4 Pikesville CDP
+    24   62025          602      1.7      0.7    348.8    903.3 Pittsville town
+    24   62175        2,591     11.3      4.4    228.7    592.2 Pleasant Hills CDP
+    24   62475        3,922      5.7      2.2    684.9   1774.0 Pocomoke City city
+    24   62850        3,796      9.0      3.5    423.9   1098.0 Poolesville town
+    24   63075          685      1.1      0.4    649.3   1681.7 Port Deposit town
+    24   63225           36      0.4      0.2     87.2    225.8 Port Tobacco Village town
+    24   63300       45,634     82.3     31.8    554.4   1435.8 Potomac CDP
+    24   63375        1,524      8.6      3.3    176.6    457.4 Potomac Heights CDP
+    24   63825          437      1.4      0.6    301.6    781.1 Preston town
+    24   63950        1,885     17.9      6.9    105.5    273.2 Prince Frederick CDP
+    24   64000        1,666      2.8      1.1    605.6   1568.5 Princess Anne town
+    24   64250        5,483      6.4      2.5    860.5   2228.7 Pumphrey CDP
+    24   64500          250      0.3      0.1    781.2   2023.4 Queen Anne town
+    24   64600          453      1.0      0.4    448.1   1160.5 Queenstown town
+    24   64950       26,277     26.6     10.3    986.9   2556.1 Randallstown CDP
+    24   65312       16,145     17.9      6.9    900.9   2333.3 Redland CDP
+    24   65600       19,314     13.0      5.0   1484.0   3843.5 Reisterstown CDP
+    24   66000        1,034      2.8      1.1    374.6    970.3 Ridgely town
+    24   66275        1,263      2.3      0.9    542.1   1403.9 Rising Sun town
+    24   66400        3,438      6.5      2.5    532.1   1378.2 Riva CDP
+    24   66550        5,185      4.1      1.6   1263.7   3273.0 Riverdale town
+    24   66850       11,376      6.2      2.4   1831.6   4743.8 Riviera Beach CDP
+    24   67400        1,584      3.4      1.3    459.5   1190.2 Rock Hall town
+    24   67675       44,835     31.4     12.1   1427.1   3696.3 Rockville city
+    24   68300        8,976     36.0     13.9    249.5    646.1 Rosaryville CDP
+    24   68400       18,703     17.7      6.8   1057.7   2739.4 Rosedale CDP
+    24   68600          256      1.4      0.6    176.9    458.2 Rosemont village
+    24   68675        6,182      2.9      1.1   2168.4   5616.1 Rossmoor CDP
+    24   68700        9,492     14.0      5.4    679.7   1760.3 Rossville CDP
+    24   69350       28,717     28.4     11.0   1010.6   2617.3 St. Charles CDP
+    24   69825        1,301      1.9      0.7    679.4   1759.6 St. Michaels town
+    24   69925       20,592     26.7     10.3    772.2   2000.0 Salisbury city
+    24   70487        9,669     12.8      5.0    753.9   1952.6 Savage-Guilford CDP
+    24   70850        5,359      1.9      0.7   2759.5   7147.2 Seat Pleasant city
+    24   70900          528      0.7      0.3    786.9   2038.0 Secretary town
+    24   71050        3,101      8.3      3.2    371.5    962.2 Selby-on-the-Bay CDP
+    24   71150       24,499     33.8     13.1    724.5   1876.5 Severn CDP
+    24   71200       25,879     33.5     12.9    773.3   2002.9 Severna Park CDP
+    24   71450        4,107     19.0      7.3    216.2    560.0 Shady Side CDP
+    24   71600          659      0.6      0.2   1142.1   2958.1 Sharpsburg town
+    24   71650          609      1.1      0.4    573.4   1485.2 Sharptown town
+    24   72450       76,046     31.6     12.2   2408.4   6237.8 Silver Spring CDP
+    24   72900        1,221      2.4      0.9    517.4   1340.0 Smithsburg town
+    24   73075        2,217      3.2      1.3    682.8   1768.4 Snow Hill town
+    24   73350          993      0.7      0.3   1365.9   3537.6 Somerset town
+    24   73550       27,564     16.4      6.3   1684.7   4363.5 South Gate CDP
+    24   73600        8,777      6.3      2.4   1397.4   3619.2 South Kensington CDP
+    24   73650       18,591     10.6      4.1   1749.6   4531.4 South Laurel CDP
+    24   75025        1,862      7.5      2.9    249.1    645.2 Stevensville CDP
+    24   75029        1,751      9.5      3.7    184.0    476.6 Stevensville South CDP
+    24   75650          428      0.7      0.3    650.5   1684.7 Sudlersville town
+    24   75762       35,111     17.2      6.6   2042.2   5289.2 Suitland-Silver Hill CDP
+    24   76550        2,303      3.3      1.3    693.3   1795.5 Sykesville town
+    24   76650       16,700      5.2      2.0   3204.1   8298.7 Takoma Park city
+    24   76725        3,695      6.5      2.5    567.1   1468.7 Taneytown city
+    24   77100        6,865      3.5      1.4   1962.0   5081.6 Temple Hills CDP
+    24   77200           66      0.2      0.1    347.4    899.7 Templeville town
+    24   77825        3,398      6.4      2.5    533.9   1382.9 Thurmont town
+    24   78425       49,445     36.4     14.0   1359.5   3521.1 Towson CDP
+    24   78575          974      2.2      0.8    453.0   1173.3 Trappe town
+    24   79350          910      1.5      0.6    609.1   1577.6 Union Bridge town
+    24   79675        2,243      1.3      0.5   1751.0   4535.0 University Park town
+    24   79875          745      1.0      0.4    711.6   1842.9 Upper Marlboro town
+    24   80600          264      0.5      0.2    578.9   1499.5 Vienna town
+    24   81175       15,058     38.0     14.7    396.5   1026.9 Waldorf CDP
+    24   81250       10,920      8.2      3.2   1335.6   3459.2 Walker Mill CDP
+    24   81275        4,145     10.4      4.0    396.9   1028.0 Walkersville town
+    24   81675          434      0.8      0.3    537.1   1391.2 Washington Grove town
+    24   82750        2,454      2.3      0.9   1074.4   2782.8 Westernport town
+    24   83025        4,151     10.5      4.1    394.9   1022.8 West Laurel CDP
+    24   83100       13,068     14.3      5.5    913.5   2365.9 Westminster city
+    24   83125        4,284     10.5      4.1    406.2   1052.1 Westminster South CDP
+    24   83225        1,928     10.9      4.2    177.1    458.7 West Ocean City CDP
+    24   83837       53,720     26.5     10.2   2026.9   5249.6 Wheaton-Glenmont CDP
+    24   84350        8,183     13.7      5.3    596.2   1544.2 White Marsh CDP
+    24   84375       18,671     12.9      5.0   1447.6   3749.3 White Oak CDP
+    24   84475        3,560     30.3     11.7    117.6    304.5 White Plains CDP
+    24   84950          708      2.5      1.0    285.0    738.2 Willards town
+    24   85100        2,103      2.8      1.1    754.6   1954.3 Williamsport town
+    24   86475       32,907     24.9      9.6   1324.0   3429.1 Woodlawn CDP
+    24   86525        5,329      3.0      1.2   1767.5   4577.8 Woodlawn CDP
+    24   86710        2,874     34.0     13.1     84.5    218.8 Woodmore CDP
+    24   86750          513      1.2      0.5    419.8   1087.3 Woodsboro town

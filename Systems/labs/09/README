@@ -1,0 +1,35 @@
+----------------------------------------------------------------------------
+Name:  Ryan Burmeister
+Alpha: 160786
+
+----------------------------------------------------------------------------
+
+Fill out the below worksheet answer any relevant questions and adding
+descriptions where neccesary. (Don't forget to write your name and
+alpha at the top)
+
+----------------------------------------------------------------------------
+
+
+Task 1: shredder
+For this task, I had to call the alarm signal in the parent while
+waiting on the child.  I then executed in the child and allowed the
+parent to continue sending alarm signals to itself until the child had
+finished.  Once the child had finished, I printed a different
+statement depending on how long the process took to run.  If the
+process took more than five ticks, I called the child and printed a
+different message.
+
+
+Task 2: moresons
+
+For this task, I had to ensure that I first set up the sigaction
+signal handler correctly.  The flags had to be set to ensure that the
+signal handler could receive signals within itself, ensure that
+certain signal calls could restart if necessary, and ensure that the
+handler had three arguments to which I could refer to when attempting
+to handle the signal.  I then had to check the si_code for each of the
+different scenarios in which the child could have been sent a signal.
+Within each of these test structures, I had to loop over the c_pid
+array and search for the pid that matched the current child pid to
+print the correct index for the child.

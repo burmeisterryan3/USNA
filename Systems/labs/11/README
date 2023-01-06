@@ -1,0 +1,30 @@
+----------------------------------------------------------------------------
+Name:  Ryan Burmeister
+Alpha: 160786
+
+----------------------------------------------------------------------------
+
+Fill out the below worksheet answer any relevant questions and adding
+descriptions where neccesary. (Don't forget to write your name and
+alpha at the top)
+
+----------------------------------------------------------------------------
+
+
+Task 1: myhost
+For this task, the first thing I had to do was set up the hints.  To
+do this I zeroed them out with memset initially before setting
+ai_family to AF_INET so that I only received IPv4 addresses.  I also
+had to set a hint to ensure that I only received TCP connections.  To
+do this I set ai_protocol to IPROTO_TCP.  I then set my getaddrinfo
+struct and check for any errors.  The last portion for this step
+involved running through a linked list and printing out the IP address
+for the particular domain name given.
+
+Task 2: mywget
+The beginning of this task was similar to the beginnign of myhost.  I
+had to ensure that my structs were set up correctly to establish a
+connection between two sockets.  Once the sockets were connected, I
+sent a GET request and opened a file with the basename of the filepath
+on the server.  I then read from the socket and wrote the information
+that was passed over the network to the file with the specified basename.

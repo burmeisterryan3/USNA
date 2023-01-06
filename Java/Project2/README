@@ -1,0 +1,24 @@
+Name- Ryan Burmeister
+alpha- 160786
+
+Furthest completed step- 6
+
+I completed all of the bullets for step 6 including:
+
+*Implement castling
+*Disallow diagonal movement for pawns unless capturing. 
+          Also, disallow capturing through forward movement.
+*Implement en passant
+*Implement pawn promotion (you may assume it is promoted to a queen)
+*Force the King to move if in check
+*Disallow the King moving into check.
+
+I created a static reference back to the board in the Piece class
+which allowed for separate child classes of Piece to reference
+this static variable.  This allowed me to check for special case moves
+(above) while remaining without having to check for specific moves
+within the board class.  This allowed the king, for instance, to completely
+control all moves directly related to a king object.  Without this
+reference, I would have had to check within the board's makeMove method.
+
+Steps 1-5, are all implented within each of Piece's child classes.

@@ -1,0 +1,92 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Short Sectioned Assignment
+% LaTeX Template
+% Version 1.0 (5/5/12)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Frits Wenneker (http://www.howtotex.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+% PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[fontsize=12pt]{article}
+\usepackage[english]{babel} % English language/hyphenation
+\usepackage{amsmath,amsfonts,amsthm} % Math packages
+
+\usepackage{sectsty} % Allows customizing section commands
+\allsectionsfont{\centering \normalfont\scshape} % Make all sections centered, the default font and small caps
+
+\usepackage{fancyhdr} % Custom headers and footers
+\pagestyle{fancyplain} % Makes all pages in the document conform to the custom headers and footers
+\setlength{\headheight}{13.6pt} % Customize the height of the header
+
+\numberwithin{equation}{section} % Number equations within sections (i.e. 1.1, 1.2, 2.1, 2.2 instead of 1, 2, 3, 4)
+\numberwithin{figure}{section} % Number figures within sections (i.e. 1.1, 1.2, 2.1, 2.2 instead of 1, 2, 3, 4)
+\numberwithin{table}{section} % Number tables within sections (i.e. 1.1, 1.2, 2.1, 2.2 instead of 1, 2, 3, 4)
+
+%\setlength\parindent{0pt} % Removes all indentation from paragraphs - comment this line for an assignment with lots of text
+
+%----------------------------------------------------------------------------------------
+% TITLE SECTION
+%----------------------------------------------------------------------------------------
+
+\newcommand{\horrule}[1]{\rule{\linewidth}{#1}} % Create horizontal rule command with 1 argument of height
+
+\title{ 
+  \normalfont \normalsize 
+  \textsc{Randomness and Computation} \\ [25pt] % Your university, school and/or department name(s)
+  \horrule{0.5pt} \\[0.4cm] % Thin top horizontal rule
+  \huge Problem 47 \\ % The assignment title
+  \horrule{2pt} \\[0.5cm] % Thick bottom horizontal rule
+}
+
+\author{Ryan Burmeister} % Your name
+
+\date{\normalsize\today} % Today's date or a custom date
+
+\begin{document}
+
+\maketitle % Print the title
+The Flajolet\_Martin algorithm is used to approximate the number of unique
+elements in a set.  Using the algorithm also ensure that only a single pass
+over the set is required and that the amount of space required is logarithmic
+compared to the maximum possible number of distinct elements.
+
+The algorithm works by initializing a vector of length $L$ to all $0$s.  We
+then assume that we have a hash function which maps an input $x$ to a value in
+the range $\left[0,2^L-1\right]$.  We then determine the first index for which
+the bit is $1$ in the hash.  This index is then set to $1$ in our vector of
+length $L$.  $R$ is then defined to be the smalles index in our vector which is
+$0$.  By performing the computation $2^R/\phi$, where $\phi\approx0.77351$, we
+can estimate the cardinality of our vector.
+
+From an intuitive standpoint, this algorithm seems to make a lot of sense.  The
+probability that each hash is even or odd is $\frac{1}{2}$.  Therefore, the
+first bit in our vector will be set to $1$ approximately $50\%$ of the time.
+The chances that more significant bits are set to $1$ occur with probability
+$\frac{1}{2^n}$ given that our hash function uniformly distributes the output. \\
+
+Example: \\ \begin{center}
+$13 = 1101_2 \rightarrow 0$, $0^{th}$ bit in vector is set to 1 \\
+$8 = 1000_2 \rightarrow 3$, $3^{rd}$ bit in vector is set to 1 \\
+$12 = 1100_2 \rightarrow 2$, $2^{nd}$ bit in vector is set to 1 \\
+$9 = 1001_2 \rightarrow 1$, $0^{th}$ bit in vector is set to 1 \\
+$10 = 1010_2 \rightarrow 1$, $1^{st}$ bit in vector is set to 1 \\
+\end{center}
+vector = 01111 \\
+The esitmate of the cardinality of the set from which the hashes were drawn is
+$2^4/0.77351 \approx 20.57$.
+
+Sources:
+Wikipedia - Flajolet-Martin Algorithm \\
+Flajolet, Philippe; Martin, G. Nigel (1985). "Probabilistic counting algorithms for data base applications"
+\end{document}

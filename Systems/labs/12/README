@@ -1,0 +1,28 @@
+----------------------------------------------------------------------------
+Name:  Ryan Burmeister
+Alpha: 160786
+
+----------------------------------------------------------------------------
+
+Fill out the below worksheet answer any relevant questions and adding
+descriptions where neccesary. (Don't forget to write your name and
+alpha at the top)
+
+----------------------------------------------------------------------------
+
+
+Task 1: factor
+For this task, I had to create four different threads that each shared
+the workload to factor a large product of two prime numbers.  To
+complete this task, I divided the numbers to check into four equal
+groups and then allowed each to run "simultaneously" on the CPU.  This
+allowed for quicker execution time for a time that could take nearly
+twice as long for single-threaded processor.
+
+Task 2: threaded-server
+For this task, I had the main thread accept connections from clients.
+Once a connection had been established, a thread would take over for
+the connection and allow for interaction after the initial
+connection.  The thread would read input, and then send it back to
+confirm that the message had been sent.  When the client closed, the
+thread recognized this and closed the socket and variables appropriately.

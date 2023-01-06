@@ -1,0 +1,8 @@
+Game report for year 2195
+Navy scores 7
+Army scores 3
+Navy ZAPS away 1
+Army scores 2
+Army scores 21
+Navy ZAPS away 27
+Navy scores 8

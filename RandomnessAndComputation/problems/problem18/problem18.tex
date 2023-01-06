@@ -1,0 +1,76 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Short Sectioned Assignment
+% LaTeX Template
+% Version 1.0 (5/5/12)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Frits Wenneker (http://www.howtotex.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+% PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[fontsize=12pt]{article}
+\usepackage[english]{babel} % English language/hyphenation
+\usepackage{amsmath,amsfonts,amsthm} % Math packages
+
+\usepackage{sectsty} % Allows customizing section commands
+\allsectionsfont{\centering \normalfont\scshape} % Make all sections centered, the default font and small caps
+
+\usepackage{fancyhdr} % Custom headers and footers
+\pagestyle{fancyplain} % Makes all pages in the document conform to the custom headers and footers
+\setlength{\headheight}{13.6pt} % Customize the height of the header
+
+\numberwithin{equation}{section} % Number equations within sections (i.e. 1.1, 1.2, 2.1, 2.2 instead of 1, 2, 3, 4)
+\numberwithin{figure}{section} % Number figures within sections (i.e. 1.1, 1.2, 2.1, 2.2 instead of 1, 2, 3, 4)
+\numberwithin{table}{section} % Number tables within sections (i.e. 1.1, 1.2, 2.1, 2.2 instead of 1, 2, 3, 4)
+
+%\setlength\parindent{0pt} % Removes all indentation from paragraphs - comment this line for an assignment with lots of text
+
+%----------------------------------------------------------------------------------------
+% TITLE SECTION
+%----------------------------------------------------------------------------------------
+
+\newcommand{\horrule}[1]{\rule{\linewidth}{#1}} % Create horizontal rule command with 1 argument of height
+
+\title{ 
+  \normalfont \normalsize 
+  \textsc{Randomness and Computation} \\ [25pt] % Your university, school and/or department name(s)
+  \horrule{0.5pt} \\[0.4cm] % Thin top horizontal rule
+  \huge Problem 18 \\ % The assignment title
+  \horrule{2pt} \\[0.5cm] % Thick bottom horizontal rule
+}
+
+\author{Ryan Burmeister} % Your name
+
+\date{\normalsize\today} % Today's date or a custom date
+
+\begin{document}
+
+\maketitle % Print the title Shannon entropy is defined as,
+
+$\sum_{i=1}^{n}p_ilg(\frac{1}{p_i})$ where $n$ events are possible and each
+event has probability $p_i$.  If assume a biased coing scenario with the
+probability of the coin landing on heads as $p$, then the probability of the
+coin landing on tails is $1-p$. If we expand the right side of the Shannon
+entropy equation with the biased coin scenario, you get
+$-plg(p)+(1-p)lg(\frac{1}{1-p})$.  In the unbiased coin scenario ($p=.5$), the
+shannon entropy is $1$.  To calculate the number of flips necessary for a
+biased coin to obtain the same shannon entropy as an unbiased coin, one can
+solve for $p$.  In the case where $p=.75$, the shannon entropy is $\approx
+0.811278$.  Therefore, at least two flips are necessary to obtain one bit of
+information.  In the more general sense, the least value of $n$ for which the
+following equation holds true give the number of flips required for a biased
+coin to give the same information as an unbiased one,
+$-plg(p)+(1-p)lg(\frac{1}{1-p}) \geq \frac{1}{n}$.
+
+
+\end{document}

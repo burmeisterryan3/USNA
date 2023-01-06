@@ -1,0 +1,108 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Short Sectioned Assignment
+% LaTeX Template
+% Version 1.0 (5/5/12)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Frits Wenneker (http://www.howtotex.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+% PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[fontsize=12pt]{article}
+\usepackage[english]{babel} % English language/hyphenation
+\usepackage{amsmath,amsfonts,amsthm} % Math packages
+
+\usepackage{sectsty} % Allows customizing section commands
+\allsectionsfont{\centering \normalfont\scshape} % Make all sections centered, the default font and small caps
+
+\usepackage{fancyhdr} % Custom headers and footers
+\usepackage[margin=1in]{geometry}
+\pagestyle{fancyplain} % Makes all pages in the document conform to the custom headers and footers
+\setlength{\headheight}{13.6pt} % Customize the height of the header
+
+\numberwithin{equation}{section} % Number equations within sections (i.e. 1.1, 1.2, 2.1, 2.2 instead of 1, 2, 3, 4)
+\numberwithin{figure}{section} % Number figures within sections (i.e. 1.1, 1.2, 2.1, 2.2 instead of 1, 2, 3, 4)
+\numberwithin{table}{section} % Number tables within sections (i.e. 1.1, 1.2, 2.1, 2.2 instead of 1, 2, 3, 4)
+
+%\setlength\parindent{0pt} % Removes all indentation from paragraphs - comment this line for an assignment with lots of text
+
+%----------------------------------------------------------------------------------------
+% TITLE SECTION
+%----------------------------------------------------------------------------------------
+
+\newcommand{\horrule}[1]{\rule{\linewidth}{#1}} % Create horizontal rule command with 1 argument of height
+
+\title{ 
+  \normalfont \normalsize 
+  \textsc{Randomness and Computation} \\ [25pt] % Your university, school and/or department name(s)
+  \horrule{0.5pt} \\[0.4cm] % Thin top horizontal rule
+  \huge Problem 13 \\ % The assignment title
+  \horrule{2pt} \\[0.5cm] % Thick bottom horizontal rule
+}
+
+\author{Ryan Burmeister} % Your name
+
+\date{\normalsize\today} % Today's date or a custom date
+
+\begin{document}
+
+\maketitle % Print the title
+
+The article is about the testing and application of random number generators.
+The author, Robert Davies, delves into how to evaluate the effectiveness of
+random generators and why anyone should care.  He defines a truly random number
+generator as one which can produce a series of bit which are entirely
+independent.  The higher the correlation between bits, the worse the generator.
+
+
+
+
+\par He begins by introducing hardware and pseudo-random generators.  He favors
+hardware generators as they are more apt to produce statistically independent
+bits and more naturally tend to fit the for requirements he gives for random
+number generation.  However, he does indicate that pseudo-random number
+generators are sufficient in most cases.  The cases in which they are not have
+to deal with long term dependicies between data.  In a lottery example, he
+demonstrates why hardware, if done correctly, can eliminate the necessity to
+verify that the probability numbers drawn by computers are the same as those
+which would have been drawn from an urn.  With a pseudo-random number
+generator, it would be hard to prove that the probability of the balls drawn
+have the same probability of those drawn from a perfectly random scenario, as
+with the urn.  The hardware generator allows for the focus on the evaluation of
+the other three requirements for computer based draws.
+
+\par The author then goes into his evaluation and analysis of hardware random
+number generators.  He began by evaluating the a disk of random number captured
+and was able to determine an error in the programming of the individual
+capturing the numbers.  I believe the author was attempting to demonstrate the
+ease by which the correlation between bits can be driven up due to a
+programming error even with an effective hardware generator.  In evaluating the
+Canadian, German, and Californian generators, get measure the percentage of 1s
+experience in each of the bits while also checking the cross-correlation
+between bits, sampling rate, and long term drift and perodicities. He then
+delves into determing the how good a random number generator needs to be by
+giving using lotteries, statistical simulations, and encryption ase examples.
+
+\par While the paper is interesting, I ended the paper not having a good feel
+as to why anyone would need truly random numbers to such a degree as examined
+in this article.  For example, in the encryption example, I question ones
+ability to predict the key when the range of keys is of sufficient length.
+Even if there is a slight correlation between bits, does that necessarily mean
+that I generate some algorithm that can generate the correct keys?  With each
+of the examples given, it appears the correlation between bits only drives up
+probabilistic likelihood by which you could predict some random outcome.
+However, how much it improves this likelihood in comparison to other methods I
+do not know.  To improve my own understanding, I guess I would need to better
+understand the ease by which someone trying to break some encryption scheme
+with pseudo-random keys would be able to do so.
+\end{document}

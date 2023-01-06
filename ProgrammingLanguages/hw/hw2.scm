@@ -1,0 +1,20 @@
+(define (split-digits n)
+  (if (= 0 (quotient n 10))
+      (cons n '())
+      (cons (modulo n 10)
+            (split-digits (quotient n 10)))
+      )
+  )
+
+(define (my-append x y)
+  (if (null? x)
+      y
+      (cons (car x) (my-append (cdr x) y)))
+  )
+
+(define (count-down x)
+  (if (> x 0)
+      (cons x (count-down (- x 1)))
+      '()
+      )
+  )

@@ -1,0 +1,108 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Short Sectioned Assignment
+% LaTeX Template
+% Version 1.0 (5/5/12)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Frits Wenneker (http://www.howtotex.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+% PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[fontsize=12pt]{article}
+\usepackage[english]{babel} % English language/hyphenation
+\usepackage{amsmath,amsfonts,amsthm} % Math packages
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+
+\usepackage{sectsty} % Allows customizing section commands
+\allsectionsfont{\centering \normalfont\scshape} % Make all sections centered, the default font and small caps
+
+\usepackage{fancyhdr} % Custom headers and footers
+\pagestyle{fancyplain} % Makes all pages in the document conform to the custom headers and footers
+\setlength{\headheight}{13.6pt} % Customize the height of the header
+
+\numberwithin{equation}{section} % Number equations within sections (i.e. 1.1, 1.2, 2.1, 2.2 instead of 1, 2, 3, 4)
+\numberwithin{figure}{section} % Number figures within sections (i.e. 1.1, 1.2, 2.1, 2.2 instead of 1, 2, 3, 4)
+\numberwithin{table}{section} % Number tables within sections (i.e. 1.1, 1.2, 2.1, 2.2 instead of 1, 2, 3, 4)
+
+%\setlength\parindent{0pt} % Removes all indentation from paragraphs - comment this line for an assignment with lots of text
+
+%----------------------------------------------------------------------------------------
+% TITLE SECTION
+%----------------------------------------------------------------------------------------
+
+\newcommand{\horrule}[1]{\rule{\linewidth}{#1}} % Create horizontal rule command with 1 argument of height
+
+\title{ 
+  \normalfont \normalsize 
+  \textsc{Randomness and Computation} \\ [25pt] % Your university, school and/or department name(s)
+  \horrule{0.5pt} \\[0.4cm] % Thin top horizontal rule
+  \huge Problem 19 \\ % The assignment title
+  \horrule{2pt} \\[0.5cm] % Thick bottom horizontal rule
+}
+
+\author{Ryan Burmeister} % Your name
+
+\date{\normalsize\today} % Today's date or a custom date
+
+\begin{document}
+
+\maketitle % Print the title
+Entropy for a fair 3-sided die: \begin{center} $-\sum_{i=1}^{3}p_ilg(p_i) =
+-\frac{1}{3}lg(\frac{1}{3})*3 = -lg(\frac{1}{3}) = lg(3) \approx 1.585$
+\end{center}
+Entropy for a weighted 6-sided die: \begin{center}
+$-\sum_{i=1}^{6}p_ilg(p_i) =
+\frac{1}{6}lg(6)+\frac{1}{9}lg(9)*3+\frac{1}{4}lg(4)*2 =
+\frac{1}{6}lg(6)+\frac{1}{3}lg(9)+1\approx2.487$ \end{center} 
+
+An algorithm for simulating the fair 3-sided die with the weighted
+6-sided die is below(\ref{alg: algorithm}).
+
+\begin{algorithm}
+  \caption{algorithm}\label{alg: algorithm}
+  \begin{algorithmic}[1]
+    \While {true:}
+      \State roll die
+      \If {roll == 2 or roll == 3 or roll == 4:}
+        \State print 'A'
+      \Else
+        \State roll again
+        \If {roll == 5 or roll == 6:}
+          \State print 'B'
+        \Else
+          \State print 'C'
+        \EndIf
+      \EndIf
+    \EndWhile
+ \end{algorithmic} 
+\end{algorithm}
+    
+This algorithm is correct because we can treat the two rolls as independent
+events.  The probability of rollina an A is $3*\frac{1}{9} = \frac{1}{3}$.
+The probability of rolling either B or C will each have a chance of
+occuring $\frac{2}{3}$ of the time (i.e. Prob(B or C) = Prob({\=A}).  The
+probability of B is then $\frac{2}{3}*(\frac{1}{4}+\frac{1}{4}) =
+\frac{1}{3}$.  The probability of C can be calculated in a similar fashion,
+$\frac{2}{3} * (\frac{1}{6} + 3*\frac{1}{9}) = \frac{1}{3}$.
+
+The expected number of dice rolls can be computed through the expected value.
+$E[X] = \sum_{i=1}^{n}p_iv_i = \frac{1}{3}*1 + \frac{2}{3}*2 =
+\frac{1}{3}+\frac{4}{3} = \frac{5}{3}$.  The entropy of the the algorithm per
+output is then: $\frac{5}{3}(\frac{1}{6}lg(6)+\frac{1}{3}lg(9)+1) \approx
+4.146$.  The entropy is then compared to the scenario with our fair 3-sided die
+to compute the entropy loss.
+$\frac{\frac{5}{3}(\frac{1}{6}lg(6)+\frac{1}{3}lg(9)+1)-lg(3)}{\frac{5}{3}(\frac{1}{6}lg(6)+\frac{1}{3}(9)+1)}
+\approx \frac{4.146-1.585}{4.146} \approx 0.6177$.
+
+\end{document}

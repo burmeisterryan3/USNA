@@ -1,0 +1,5 @@
+Winning game:
+a1 a2 b2 b3 c3
+
+draw game:
+a1 b1 b3 a2 a3 b2 c2 c3 c1

@@ -1,0 +1,44 @@
+----------------------------------------------------------------------------
+Name:  Ryan Burmeister
+Alpha: 160786
+
+----------------------------------------------------------------------------
+
+Fill out the below worksheet answer any relevant questions and adding
+descriptions where neccesary. (Don't forget to write your name and
+alpha at the top)
+
+----------------------------------------------------------------------------
+
+
+Task 1: unroll
+For this process, I had to consider two different scenarios:  one in
+which the parent was going to be completed first and the other in
+which the child would finish first.  In both scenarios, the
+implementation was similar.  The parent had to check if the child's
+process group had been set, and if not, then it needed to set the
+process group id to that of the child and then remember that process
+id for future processes within the same job.  In the child, it was
+necessary to do the same thing due to the race condition occurring at
+the OS level.  I checked to see if the child progress group had been
+set, and if not, I set it to the pid of the child and remembered the
+child group pid.  If the process group id had been set, then the child
+process was to use the one already used.  In addition to this, the
+child also had to parse the process command and execute this command.
+
+
+
+Task 2: pipe-dup
+To complete this task, I also had to consider the two different
+scenarios of being in either the parent or child.  If I was in the
+parent, then I had to ensure that I transferred the input and output
+control specifically to the parent.  Once this was done, I ensure that
+the writing end of the pipe was closed.  If in the child, I had to
+check three different scenarios:  the beginning, middle, or end of the
+pipe.  If at the beginning, I had to close the read in so that stdin
+was used and closed stdout with cur_pipe having control of the
+output.  If at the end, I closed the output of the parent pipe and
+closed the child's input while copying the parent's input file
+descriptor.  If in the middle of the pipeline, I closed the input of
+the child's pipe and output of the parent's pipe while ensureing that
+I could read with the parent's pipe and output with the child's pipe.

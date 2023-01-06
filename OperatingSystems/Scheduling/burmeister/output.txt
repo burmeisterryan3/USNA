@@ -1,0 +1,48 @@
+---------ROUND ROBIN-----------
+Average response time:  25.9410125406
+Average turnaround time:  63.6276126335
+Average throughput:  0.172188343497
+
+
+
+---------PRIORITY-----------
+Average response time:  32.1654667905
+Average turnaround time:  56.8037621923
+Average throughput:  0.172188343497
+
+
+
+---------FIRST COME FIRST SERVE-----------
+Average response time:  45.5991639573
+Average turnaround time:  50.098467255
+Average throughput:  0.172188343497
+
+
+
+---------SHORTEST PROCESS NEXT-----------
+Average response time:  27.7531351602
+Average turnaround time:  32.252438458
+Average throughput:  0.172188343497
+
+
+
+---------SHORTEST REMAINING TIME-----------
+Average response time:  25.5012772875
+Average turnaround time:  31.1777751974
+Average throughput:  0.172188343497
+
+
+
+---------HIGHEST RESPONSE RATIO-----------
+Average response time:  36.7465164886
+Average turnaround time:  41.2458197863
+Average throughput:  0.172188343497
+
+
+
+Priorty performed the worse in terms of fairness.  Of
+the algorithms where starvation is possible, priority
+performed the worse in terms of response time and
+turnaround time.  The algorithms where starvation is
+possible are priority, shortest process next, and
+shortest remaining time.

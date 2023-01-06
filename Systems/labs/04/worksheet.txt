@@ -1,0 +1,107 @@
+----------------------------------------------------------------------------
+Name:  Ryan Burmeister
+Alpha: 160786
+
+----------------------------------------------------------------------------
+
+Fill out the below worksheet answer any relevant questions and adding
+descriptions where neccesary. (Don't forget to write your name and
+alpha at the top)
+
+----------------------------------------------------------------------------
+Task 1: Memory Leaks
+
+    
+    1. Run valgrind on the memleak program, how many bytes does it
+       say have been definitely lost?
+       
+       60 bytes
+
+    2. What line does valgrind indicate the memory leak has occurred?
+
+       Memory leaks occured at 19, 33, and 49.
+    
+    3. Describe the memory leak.
+
+       After calls with malloc and calloc, the memeory was not freed.
+
+    4. Try and fix the memory leak and verify your fix with
+       valgrind. Describe how you fixed the memory leak.
+       
+       For the "first" a, I freed the memory inside the doupleup
+       function, as the the second pointer used values referenced by
+       the first pointer created.  After the print statement, I freed 
+       the memory as that was the last point in which the memory was 
+       referred to for the new_a.
+
+Task 2: Memory Violations
+
+  1. Describe the output and exeuction of the program. Does it seem to
+     be consistent?
+
+     The ouput seems to be consistent when not concerned with the
+     memory leaks.  The output is always "Hello World!".
+
+  2. Run the program under valgrind, identify the line of code that is
+     causing the memory violation and its input.
+
+     The memory leak occurred at line 11.
+
+  3. Debug the memory violation and describe the programming bug.
+
+     The memory viloation occurs with the %s is printf.  The printf
+     will continue printing until a string terminator, \n, is read, and 
+     the array was not created large enough to hold this value.
+
+  4. Fix the memory violation and verify your fix with valgrind.
+
+     To fix the memory violation, I ensured that the string terminator
+     character was passed as well by adding one to the length of the
+     array and one to the condition of the loop.
+  
+
+Task 3: Segfaults
+
+  1. Reviewing the program =segfault.c=. Describe the expected output.
+
+     The desired output is to print the values that the pointer's
+     pointer references (i.e. left and right) for the size of the
+     array.  However, the program tries to print the values with 
+     NULL pointers as well.
+
+  2. Compile and execute the program (don't forget the -g compilation
+     flag). Use gdb to identify the segfault.
+
+     The program runs until the printf statement reaches the firt NULL
+     pointer.
+
+  3. Fix the segfault, and continue to the debug the program until
+     the desired output is reached:
+
+     I added an if structure under the loop for printing that ensured
+     that the program only tried to print when the pointer was not
+     referencing a NULL value.
+
+Task 4: simplefs
+
+    When creating a directory, memory had to be allocated for the
+    dirctory pointer and the array of file pointers.  When creating a
+    file, it was first necessary to search the array to ensure that
+    there was not a file of the same name.  I then checked each slot
+    within the array to check if there was a NULL pointer, and if so,
+    ensure that the "strings" were not the same.  Otherwise, I ensured
+    that the first NULL pointer was allocated memory for a file.
+
+    To free the memory stored within the directory, there was a
+    specific order in which the memory had to be freed.  The char
+    arrays within each file had to be freed before the pointer to that
+    specific file.  Once each file pointer had been freed, then the
+    pointer to the array of file pointers could be freed before
+    freeing the directory itself.  To remove a file, I had to free the
+    memory associated with the file name and then the pointer itself.
+
+    To create an ls function, I looped over the entire file array, and
+    as long as there was not a NULL pointer, I printed the information
+    about the file.
+
+    

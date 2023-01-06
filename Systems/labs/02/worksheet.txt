@@ -1,0 +1,72 @@
+----------------------------------------------------------------------------
+Name:  Ryan Burmeister
+Alpha: 160786
+
+----------------------------------------------------------------------------
+Instructions:
+
+  Replace the X's above with your name and alpha, and your partners
+  Below, fill out this worksheet with the appropriate answers
+  following the questions.
+
+  Feel free to add extra whitespace as needed, but please leave the
+  general questions and worksheets intact. 
+
+  This worksheet will be submitted electronically with your
+  submission. Instructions for submission are found on the lab page.
+
+----------------------------------------------------------------------------
+
+For each of the tasks, describ your script logic, any issue you had,
+and any other information you'd like to share with the isntructor.
+
+Task 1:  I used the cut command with the colon as the delimiter to
+separate the fields.  In addition to the delimiter option, I used the
+field option to pull the first field to grab the usernames from the
+standard format of etc/passwd.
+
+
+Task 2:  I assigned a variable for the first argument (username)
+entered by the user.  I then used grep to grab the line in the
+/etc/passwd file to match the line with the username.  The process was
+then similar to Task 1, and I only had to cut the field with the
+information necessary.
+
+
+Task 3: When considering the how to obtain the file size of the first
+argument of the user, I had to ensure that the input was not a
+directory.  If the input was not a directory, I then checked to see if
+the file existed.  If it existed, I listed the file in the long format
+and cut from the field I needed.  If neither of the first two
+conditions were satisfied, then the input was a file that did not
+exist, and I output to stderr telling the user this.
+
+
+Task 4: For the execution of this task, I created a for loop to run
+for each of the arguments input by the user.  Inside the loop, it was
+necessary to check for whether or not the file exists.  If the file
+does, then the line should print out the argument entered and then
+list the arguments file information. From this information, the output
+line will be cut by fields to remove the size of the file.  If no file
+exists for the argument entered, the user should be notified.
+
+
+Task 5: When starting this task, it is first necessary to ensure that
+a size and path are entered before continuting to check for any
+additional information.  The next check is to ensure that file in fact
+exists, and that the filesize entered is a number.  Separate messages
+were necessary for each different error.  The last check was to ensure
+that the number given was greater than zero.  As long as these
+conditions were met, the size given was compared to the file size to
+determine whether to output yes or no.
+
+
+Task 6: For this task, I started by assuming a similar situation to
+task 5.  I began by ensuring that the input was in the required form
+with both a size and at least one filename.  I then had to ensure that
+the size of the file was both a number and greater than 0.  I
+continued from here by running a loop that checked whether each of
+the arguments was a file that existed.  If the file existed, I then
+checked the filesize against the size entered by the user in the first
+argument and output the filename if the filesize was greater than the
+user input.

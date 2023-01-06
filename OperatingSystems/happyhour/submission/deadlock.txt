@@ -1,0 +1,95 @@
+Output of islander:
+
+islander 6 got a funnel
+islander 6 got a coconut
+islander 6 got a machete
+islander 6 enjoying a pina colada
+islander 5 got a machete
+islander 5 got a funnel
+islander 5 got a coconut
+islander 5 enjoying a pina colada
+islander 7 got a machete
+islander 7 got a funnel
+islander 7 got a coconut
+islander 7 enjoying a pina colada
+islander 4 got a funnel
+islander 4 got a coconut
+islander 8 got a coconut
+islander 3 got a coconut
+islander 10 got a coconut
+islander 11 got a funnel
+islander 11 got a coconut
+islander 12 got a coconut
+islander 13 got a funnel
+islander 13 got a coconut
+islander 14 got a coconut
+islander 22 got a coconut
+islander 24 got a coconut
+islander 18 got a coconut
+islander 23 got a coconut
+islander 30 got a coconut
+islander 1 got a coconut
+islander 6 released a funnel
+islander 6 released a machete
+islander 6 released a coconut
+islander 6 done
+islander 32 got a funnel
+islander 32 got a coconut
+islander 32 got a machete
+islander 32 enjoying a pina colada
+islander 33 got a coconut
+islander 35 got a coconut
+islander 40 got a coconut
+islander 41 got a coconut
+islander 42 got a coconut
+islander 43 got a coconut
+islander 0 got a coconut
+islander 5 released a funnel
+islander 5 released a machete
+islander 5 released a coconut
+islander 5 done
+islander 47 got a funnel
+islander 47 got a coconut
+islander 47 got a machete
+islander 47 enjoying a pina colada
+islander 48 got a coconut
+islander 47 released a funnel
+islander 47 released a machete
+islander 47 released a coconut
+islander 47 done
+islander 7 released a funnel
+islander 7 released a machete
+islander 7 released a coconut
+islander 7 done
+islander 32 released a funnel
+islander 32 released a machete
+islander 32 released a coconut
+islander 32 done
+
+How we know deadlock occurred:
+First, it is easy to note that the program has not completed
+as the final line to be printed is "All islanders have achieved
+happyhour."  However, as this did not occur and the program
+reached a point at which no work was being done, the program
+is known to have reached a deadlocked state.
+
+Why deadlock occurred:
+It is first important to note that we have 50 islanders who are
+trying to access three resources at the same time.  We know they
+are accessing resources at the same time through the creation of
+threads.
+Deadlock becomes troublesome as each islander is trying to access 
+each of the three resources.  Each islander will access these 
+resources in one of three orders where the selection of the order 
+is random.  However, the islanders do not drop any of the objects
+until they have obtained all three and made their pina colada.  
+This is a problem as there are only 3 machetes and 6 funnels 
+available for making their drinks.  We can think of a scenario in
+which 6 islanders grab a machete and simultaneously 3 islanders 
+grab a funnel.  None of the islanders will be able to make their 
+pina colada as they are waiting on one of the other islanders to 
+drop the necessary resource. 
+Coconuts will never be competed for as their is an equal number of
+coconuts and islanders.  One may have to wait for a coconut due to
+the order in which objects are selected is preset and an islander
+may wait for a machete before picking their coconut.

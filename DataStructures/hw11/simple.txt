@@ -1,0 +1,7 @@
+one.net     two.com       1.5
+one.net     a.1e100.net  11.2
+two.com     three.org     1.5
+one.net     three.org     2.2
+three.org   b.1e100.net   3.3
+three.org   four.gov      2.0
+four.gov    b.1e100.net   0.9

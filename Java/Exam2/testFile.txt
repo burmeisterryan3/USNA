@@ -1,0 +1,19 @@
+4
+M
+Sports Illustrated
+1.50
+25
+B
+Mr. Citizen
+Harry S Truman
+21.99
+1
+M
+The Economist
+0.99
+0
+B
+Infinite Jest
+David Foster Wallace
+15.99
+5

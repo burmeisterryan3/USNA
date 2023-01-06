@@ -1,0 +1,10 @@
+(define (mixup x)
+  (cond ((symbol? x) 5)
+        ((number? x) 'num)
+        (else '())
+        )
+  )
+
+(define (and->if x)
+  (cons 'if (cons (cadr x) (cons (caddr x) (cons '#f '()))))
+  )

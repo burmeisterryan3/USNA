@@ -1,0 +1,80 @@
+----------------------------------------------------------------------------
+Name:  Ryan Burmeister
+Alpha: 160786
+
+----------------------------------------------------------------------------
+Instructions:
+
+  Replace the X's above with your name and alpha, and your partners
+  Below, fill out this worksheet with the appropriate answers
+  following the questions.
+
+  Feel free to add extra whitespace as needed, but please leave the
+  general questions and worksheets intact. 
+
+  This worksheet will be submitted electronically with your
+  submission. Instructions for submission are found on the lab page.
+
+----------------------------------------------------------------------------
+
+For each of the tasks, describe your programs functionality and
+design. Also include any issue you had, and any other information
+you'd like to share with the instructor.
+
+Task 1:  In swap.c, to change two values reference by pointers, I
+first created a temporary temporary int variable and assigned its
+value to the value the pointer a referenced.  To obtain this value, I
+dereferenced a.  I then gave the value stored in a the value in b
+through dereferencing.  Once this was done, I gave the value in temp
+to b as the value in a was now b.
+
+
+Task 2:  In string_ex.c, to copy the "from" string to the "to" string
+I copied each individual element by accessing the individual elements
+of each array.  To reverse a string, a first created an array with the
+length of the string passed in plus one.  I added the one because the
+strlen operator does not account for the string terminator.  I then
+looped copying the value at the end of the temporary string (which was
+a copy of the first string) into the first element of the string I
+wanted to change.  I had to subtract one from my counter when
+accessing the last element as my counter began at 0 and the last
+element of my temp array was the string terminator.
+
+
+Task 3: To complete this task, I first created a character array for
+the output file name of saved.out.  Before reading from the file, I
+checked to see if the file was NULL.  If it was, the program was to
+exit the loop and print and error to stderr.  Otherwise, I used fgetc
+to read from stdin and assign the int to c.  As long as c did not
+equal c, I would ouput as a char again with fputc and read in the
+next char.  For recall.c, I ensured that saved.out could be read from,
+and if not, I ouput an error message and exited.  If not I read the
+input from a filestream and output to stdout.
+
+
+Task 4: For mycp.c, I first ensured that there was at least three
+arguments.  This ensured that I had a "from" and "to" file.  I then
+opened filestreams to both.  From this point, I used fgetc with the
+"from" file and used fputc with the "to" file and then closed the
+files once done.
+For mycat.c, I first ensured that if less than two arguments were
+entered to read from stdin.  Otherwise, I looped over the number of
+arguments.  If the argument was a "-", then I read from stdin.  If
+neither of these conditions was satisfied, I read from the file for
+that argument.  Each of these conditions output to stdout.
+
+
+Task 5:  For the count function, I defined a int c and prev. "c" was
+used to get an int from the char from the filestrean.  As long as this
+was not EOF, then I converted this back to a character and incremented
+the number of bytes.  If the character was a space, I checked the
+previous char using the int prev which had been initialized to one so
+it could enter the loop the first time.  If check was true, then I
+incremented the word counter.  If a new line character was entered, I
+incremented the line counter.  For my print function, I checked the
+conditions for lines, words, and bytes.  If they were one, then I
+printed the values for that particular file.  If the counter equaled
+was at the index of the last argument and was not 0 or 1, I printed
+the total number of lines, words, and/or bytes depending on the input
+of the user.  I checked against 0 and 1 in case the user only entered
+one file or wanted to check straight from stdin.

@@ -1,0 +1,21 @@
+MIDN Burmeister
+160786
+
+The program starts by reading in input from the desired
+text file, and assigning the value to an appropriate
+variable that I have created.  Once everything has been
+read in from the specified file, the tape is read in.
+The tape in my program is a vector, and I continually
+add to the back of the vector until there is nothing more
+to add.  The next stage of the program is running the
+turing machine.  The turning machine must find the
+appropriate delta function and apply the transition
+accordingly.  This was done in the structure of two for
+loops and the use of a boolean value.  The boolean value
+was used to determine whether the appropriate delta
+function had in fact been used.  The head was decremented
+or incremented depending on whether the transition was
+to the left or right on the tape.  If at any point the
+machine reached the accept state or no transition function,
+the running ended and the input was either accepted or
+rejected.

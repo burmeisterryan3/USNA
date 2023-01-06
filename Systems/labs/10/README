@@ -1,0 +1,51 @@
+----------------------------------------------------------------------------
+Name:  Ryan Burmeister
+Alpha: m160786
+
+----------------------------------------------------------------------------
+
+Fill out the below worksheet answer any relevant questions and adding
+descriptions where neccesary. (Don't forget to write your name and
+alpha at the top)
+
+----------------------------------------------------------------------------
+
+
+Task 1: makelinks
+For this portion of the lab, I first had to check the desired output
+to see if there were any hard linked files with the same i-node.  If
+so, then I had to hard link these files.  For the other linked files,
+I had to symbolically link.
+
+Task 2: cleanlinks
+Many of the files for this task were hard linked and were going to
+have to by symbolically.  To make this happen, I unlinked the file and
+then symbolically linked it to the letter one below itself (i.e. b -> a).
+
+Task 3: llines
+//use of lseek to set byte offset
+For this task, it was necessary to recognize that opts.end and
+opts.start were each initially set to -1.  If either of these values
+were entered as negative (other than -1), I printed an error
+statement.  I also printed an error statment if the start value was
+greater than the end value (if this value was not -1).  If the -e
+option was not entered (opts.end == -1), then I started at the offset
+designated by -s and printed until the end of the file.  If the -s
+option was not entered (opts.start == 1), then I started at the number
+of bytes designated from the end of the file.  If both options were
+used, I started at the byte designated by the -s option and ended at
+the byte designated by the -e option.
+
+Task 4: flines
+//Same as above except for using fseek instead of lseek
+For this task, it was necessary to recognize that opts.end and
+opts.start were each initially set to -1.  If either of these values
+were entered as negative (other than -1), I printed an error
+statement.  I also printed an error statment if the start value was
+greater than the end value (if this value was not -1).  If the -e
+option was not entered (opts.end == -1), then I started at the offset
+designated by -s and printed until the end of the file.  If the -s
+option was not entered (opts.start == 1), then I started at the number
+of bytes designated from the end of the file.  If both options were
+used, I started at the byte designated by the -s option and ended at
+the byte designated by the -e option.

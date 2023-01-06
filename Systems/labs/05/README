@@ -1,0 +1,54 @@
+----------------------------------------------------------------------------
+Name:  Ryan Burmeister
+Alpha: 160786
+
+----------------------------------------------------------------------------
+
+Fill out the below worksheet answer any relevant questions and adding
+descriptions where neccesary. (Don't forget to write your name and
+alpha at the top)
+
+----------------------------------------------------------------------------
+
+Task 1: Simple Makefile
+The output after creating the Makefile was "You compiled me!
+.... Hurray!".  If I type make after executing the program, it states
+that there is nothing to do for 'all' (default) of my Makefile.
+To print the file, I added a print format that used the execution
+command ./compileme.  To add options to the compilation, I place the
+-g and -Wall options in front of my filename.
+
+Task 2: Multipart Makefile
+For this task, I had to check the .c files dontrunme.c and runme.c to
+see which headers they included.  For runme.c, it only included the
+library.h header, so I compiled library.c as library.o.  I then
+compiled library.o with runme.c as the executable runme.  For
+dontrunme.c, I had to go through a similar process but with two header
+files.  I did the same process for fun.c as I did for library.c
+above.  To run, I compiled fun.o, library.o, and dontrunme.c as the
+executable dontrunme.  If the all target is given, it created both executables.
+
+Task 3: mycp
+To complete this task, I first ensured that there were two files (one
+to be copied from and the other to) and that 'stat' could be used on
+the first file.  I then checked to ensure that file entered as the one
+to be copied from was not a directory.  Once these checks were
+complete, I opened the file to be read from and copied its contents to
+the second file and ensured that the permissions were the same when
+creating the file.
+
+Task 4: myls
+To print a long list of files within a directory, I had to check if
+'stat' could be used on each file.  I then took the file permission
+information on each file and converted the information from the stat
+struct into a string for a more easily read form of the information.
+From here, I printed the filename, user id, and group id after
+ensureing that information could be accessed.  I then printed the size
+and time of last modification of each file.
+
+Task 5: mytouch
+To accomplish the task of updating the last modified time, I first
+checked to see if I could 'stat' the file input by the user.  I then
+printed the time it had last een modified before getting the current
+time and assigning it to the last modified time of the same file.  I
+then printed the newly modified time from the file information.

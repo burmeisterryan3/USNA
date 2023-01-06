@@ -1,0 +1,40 @@
+----------------------------------------------------------------------------
+Name:  Ryan Burmeister
+Alpha: 160786
+
+----------------------------------------------------------------------------
+
+Fill out the below worksheet answer any relevant questions and adding
+descriptions where neccesary. (Don't forget to write your name and
+alpha at the top)
+
+----------------------------------------------------------------------------
+
+Task 1: foursons
+For this task, I ensured that I waited for each of the child processes to
+terminate.  To implement this, I set up a while loop and waited for each
+individual process to terminate.  I then check if exited normally or with
+some sort of signal.  For each of the separate conditions, I notified the
+user of the different termination status.
+
+Task 2: timer
+To complete the timer task, I first had to ensure I had the correct time of
+day stored prior to the fork.  I then forked and executed if it was the child
+process.  In the parent process, I waited until the child had changed states
+and then got the time of day again.  I then subtracted the time calculated
+earlier from this new later time.  This gave me the approximate time to run
+the child process which I then printed to the monitor.
+
+Task 3: mini-sh
+To create a mini shell, the first thing I needed to do was tokenize the input
+given by the user on the command line.  In addition to this, I also had to
+ensure that I was storing the pointer to the char array in char pointer array.
+This allowed me to take mulitple arguments from the user and treat them as one
+command such as ls -al or some sort of find command.  To complete the char
+pointer array, I made the last pointer NULL to ensure that execvp knew where to
+stop when called.  The rest of the task was similar to the timer program.  I
+had to obtain the time of day and fork, and from here, check to see which process
+was exectuting the code.  If the child was running I exec'ed, and if the parent
+was running, I waited on the child to terminate.  Once the child had terminated
+I obtained the new time of day and calculated the difference between the times
+to obtain the amount of time it took to run the process.

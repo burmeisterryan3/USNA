@@ -1,0 +1,93 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Short Sectioned Assignment
+% LaTeX Template
+% Version 1.0 (5/5/12)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Frits Wenneker (http://www.howtotex.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+% PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[fontsize=12pt]{article}
+\usepackage[english]{babel} % English language/hyphenation
+\usepackage{amsmath,amsfonts,amsthm} % Math packages
+
+\usepackage{sectsty} % Allows customizing section commands
+\allsectionsfont{\centering \normalfont\scshape} % Make all sections centered, the default font and small caps
+
+\usepackage{fancyhdr} % Custom headers and footers
+\pagestyle{fancyplain} % Makes all pages in the document conform to the custom headers and footers
+\setlength{\headheight}{13.6pt} % Customize the height of the header
+
+\numberwithin{equation}{section} % Number equations within sections (i.e. 1.1, 1.2, 2.1, 2.2 instead of 1, 2, 3, 4)
+\numberwithin{figure}{section} % Number figures within sections (i.e. 1.1, 1.2, 2.1, 2.2 instead of 1, 2, 3, 4)
+\numberwithin{table}{section} % Number tables within sections (i.e. 1.1, 1.2, 2.1, 2.2 instead of 1, 2, 3, 4)
+
+%\setlength\parindent{0pt} % Removes all indentation from paragraphs - comment this line for an assignment with lots of text
+
+%----------------------------------------------------------------------------------------
+% TITLE SECTION
+%----------------------------------------------------------------------------------------
+
+\newcommand{\horrule}[1]{\rule{\linewidth}{#1}} % Create horizontal rule command with 1 argument of height
+
+\title{ 
+  \normalfont \normalsize 
+  \textsc{Randomness and Computation} \\ [25pt] % Your university, school and/or department name(s)
+  \horrule{0.5pt} \\[0.4cm] % Thin top horizontal rule
+  \huge Problem 62 \\ % The assignment title
+  \horrule{2pt} \\[0.5cm] % Thick bottom horizontal rule
+}
+
+\author{Ryan Burmeister} % Your name
+
+\date{\normalsize\today} % Today's date or a custom date
+
+\begin{document}
+
+\maketitle % Print the title
+\section{Fastest Search}
+The fastest search time would be between the rBST and Treap as a Skip List
+would require the traversal over links with variable points in memory.  The
+Treap would seem to have the fastest search time as it seems to be less biased
+towards the order of its inputs.  A rBST would seem to have a greater chance to
+look closer like a degenerate tree if all of its inputs were in ascending or
+descening order.  For that reason, a Treap would have the fastest searh time.
+
+\section{Fastest Insertion}
+Treaps would have the fastest insertion time as it simply requires the addition
+of an item to an array with some bubbling up as necessary.  A Skip List
+requires the maniuplation of pointers and the creation of a node with a Tower
+of a particular height based on the number of flips.  rBSTs require the
+restructuing of the tree based on where the new node is inserted.
+
+\section{Fastest Deletion}
+Treaps would have the fastest deletions.  Skip Lists would require the changing
+of a number of pointers equivalent to the height.  A rBST would again require the
+restructuring of the subtree in order to determine which nodes should be the roots
+of each subtree.  Treaps would simply require moving elements in right diagonal of
+the subtree up the tree.
+
+\section{Simplest to Implement}
+A Skip List would be the easiest to implement as all that it would require is
+the creation of Towers (arrays of pointers) and the changing of pointers for
+insertion and deletion.  Each of the tree methods require the user to correctly
+swap elements in an array with the insertion or deletion of nodes.
+
+\section{Smallest Memory Footprint}
+rBSTs would have the smallest footprint of the three.  Both rBSTs and Treaps
+only store their data and a couple of pointers while Skip Lists store arrays
+based on the height of each tower.  Furthermore, rBSTs just have to store the
+data while Treaps also store a value for the priority of each node.
+
+\end{document}

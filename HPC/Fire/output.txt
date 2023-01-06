@@ -1,0 +1,20 @@
+mpirun -n 16 ./fire 200 .8 3 0.333
+The average density was: 0.003800
+mpirun -n 16 ./fire 200 .8 3 0.333
+The average density was: 0.004425
+mpirun -n 16 ./fire 200 .8 3 0.333
+The average density was: 0.003075
+mpirun -n 16 ./fire 200 .8 3 0.333
+The average density was: 0.003300
+mpirun -n 16 ./fire 200 .8 3 0.333
+The average density was: 0.003275
+mpirun -n 16 ./fire 200 .8 3 0.333
+The average density was: 0.003350
+mpirun -n 16 ./fire 200 .8 3 0.333
+The average density was: 0.800400
+mpirun -n 16 ./fire 200 .8 3 0.333
+The average density was: 0.800450
+mpirun -n 16 ./fire 200 .8 3 0.333
+The average density was: 0.800975
+mpirun -n 16 ./fire 200 .8 3 0.333
+The average density was: 0.003000

@@ -1,0 +1,80 @@
+----------------------------------------------------------------------------
+Name:  XXXXXX
+Alpha: XXXXXX
+
+----------------------------------------------------------------------------
+
+Fill out the below worksheet answer any relevant questions and adding
+descriptions where neccesary. (Don't forget to write your name and
+alpha at the top)
+
+----------------------------------------------------------------------------
+
+
+Task 1: littleman
+
+ A. Describe what happened when the fork bomb reached its conclusion?
+ What system resources ran out?
+When the fork bomb reached its conclusion, my computer seemed to be in
+ a frozen state.  I could not move my mouse or type in any commands.
+ I could still switch between different ttys, but I could not login.
+ This was due to the lack of memory available as the fork bomb was
+ using it all.
+ 
+ B. What must you do to reset your computer? 
+ I had to hardboot my computer to reset it.
+
+Task 2: bigboy
+
+  A. Fill out the following information in the table below. The first
+   two rows(n=0 and n=4) have been done for you as examples:
+
+  Column A: Number of generations to pass to forkbomb (e.g. formbomb2 4)
+  Column B: Number of forkbomb2 processes running (use ps -C forkbomb2)
+  Column C: Total number of processes as reported by 'top'
+  Column D: CPU usage as reported by 'top'
+  Column E: Free Memory as reported by 'top'
+
+A        B        C        D            E
+-------------------------------------------------------
+0        1       205    12.5%     5783960K
+4       16       222   100.0%     5783469K   
+5       32       245   100.0%     6619216K
+10      1024    1237   100.0%     6526876K
+13      8292    8405    99.7%     5795332K      
+14      6454    10043   99.7%     5640336K
+15      9830    10043   99.5%     5658172K
+16      9828    10041   99.6%     5541388K
+
+ B. What was the lowest value of n in the table above that failed to
+ start the expected number of bigboy processes?
+
+bigboy 14 was the lowest value of n that failed to start the expected
+ number of bigboy processes.
+
+ C. How many bigboy processes should have been created for the row in
+ 1b? How many were actually created? How does this related to the
+ ulimit?
+
+There should have been 2^n processes created for each number entered
+ after bigboy.  Once I reached 14, the process limit was limited to
+ approximately 10K processes.
+
+Task 3: myps
+
+  For myps, I had to format the string to ensure that fopen could open
+  the correct process path.  Once I had the correct format for the
+  string, I was able to open the file path and pullthe necessary
+  information.  I then printed the necessary variables in the correct
+  format and informed the user if the pid was invalid.
+
+Task 4: mypstree
+
+  (place a brief description of your program and any comments here)
+
+
+Task 5: fg-shell
+
+  (place a brief description of your program and any comments here)
+
+ 
